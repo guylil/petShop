@@ -7,9 +7,9 @@ Clone the repo `git@github.com:guylil/petShop.git`
 
 Cd into the repo `cd petShop`
 
-`npm install`
+run `npm install`
 
-`node index.js`
+run `node index.js`
 
 Open your favorite browser at `localhost:3000`
 
