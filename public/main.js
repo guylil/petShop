@@ -42,5 +42,6 @@ selectOccamyEl.addEventListener("click", occamySelected);
 
 const getPetsData = new XMLHttpRequest();
 getPetsData.addEventListener("load", getPets);
-getPetsData.open("Post", "http://localHost:3000/pets");
+const port = process.env.PORT || 3000;
+getPetsData.open("Post", `http://localHost:${port}/pets`);
 getPetsData.send();
