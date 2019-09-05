@@ -11,7 +11,7 @@ run `npm install`
 
 run `node index.js`
 
-Open your favorite browser at `localhost:3000`
+Open your Chrome browser at `localhost:3000`
 
 ### Hava a look around
 
