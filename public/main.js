@@ -44,6 +44,8 @@ const getPetsData = new XMLHttpRequest();
 getPetsData.addEventListener("load", getPets);
 console.log(window.location.origin);
 const isHeroku = window.location.origin ==='https://pet-shop-server.herokuapp.com/';
-const urlPath = (isHeroku)? 'https://pet-shop-server.herokuapp.com/pets' : 'http://localHost:3000/pets';
+console.log(isHeroku)
+const urlPath = (isHeroku)? 'https://pet-shop-server.herokuapp.com/' : 'http://localHost:3000/pets';
+console.log(urlPath)
 getPetsData.open("Post", urlPath);
 getPetsData.send();
