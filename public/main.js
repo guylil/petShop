@@ -42,6 +42,7 @@ selectOccamyEl.addEventListener("click", occamySelected);
 
 const getPetsData = new XMLHttpRequest();
 getPetsData.addEventListener("load", getPets);
-const urlPath = (process.env.heroku)? 'https://pet-shop-server.herokuapp.com/pets' : 'http://localHost:3000/pets';
+const isHeroku = window.location.origin ==='https://pet-shop-server.herokuapp.com/';
+const urlPath = (isHeroku)? 'https://pet-shop-server.herokuapp.com/pets' : 'http://localHost:3000/pets';
 getPetsData.open("Post", urlPath);
 getPetsData.send();
